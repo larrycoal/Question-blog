@@ -37,7 +37,7 @@ app.get('/qBlog', (req, res) => {
     })
 })
 app.get('/qBlog/ask', (req, res) => {
-    res.render('ask')
+    res.render('Ask')
 })
 
 app.post('/qBlog', (req, res) => {
