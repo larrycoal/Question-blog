@@ -2,12 +2,12 @@
 <div class="container" id="qform">
     <form action="/qBlog" method="POST">
         <label for="name">Name</label> <br>
-        <input type="text" id="name" placeholder="name" name="name"><br>
+        <input type="text" id="name" placeholder="name" name="name" required><br>
         <label for="name">Course Title</label> <br>
-        <input type="text" id="name" placeholder="name" name="course">
+        <input type="text" id="name" placeholder="name" name="course" required>
         <div class="form-group ">
             <label for="questions">Questions</label>
-            <textarea class="form-control" type="text" id="questions" rows="3" name="question"></textarea>
+            <textarea class="form-control" type="text" id="questions" rows="3" name="question"required></textarea>
             <input type="submit" class="btn btn-danger float-right" id="Asubmit">
 
         </div>
