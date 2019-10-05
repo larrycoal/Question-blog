@@ -6,7 +6,7 @@ const mongoose = require('mongoose')
 mongoose.set('useUnifiedTopology', true);
 mongoose.set('useNewUrlParser', true);
 app.use(express.static(__dirname + "/public"));
-mongoose.connect('mongodb://<dbuser>:<dbpassword>@ds229078.mlab.com:29078/heroku_02cn163v');
+mongoose.connect('mongodb://heroku_02cn163v:f8ethnlkp0u4c692sego2kc1vq@ds229078.mlab.com:29078/heroku_02cn163v');
 
 app.use(bodyparser.urlencoded({ extended: true }));
 app.use(methodoverride('_method'))
