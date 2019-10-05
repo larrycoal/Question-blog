@@ -1,0 +1,32 @@
+<% include partials/header.ejs %>
+
+
+
+<div class="container " id="qform">
+    <% info.forEach((info)=>{%>
+    <hr>
+    <p>
+       <strong><%=info.title%></strong> ( <%=info.created.toDateString()%> ) <br>
+        <%= info.name%> ask: <strong><%= info.questions%></strong>
+
+    </p>
+  <p>
+    <%= info.answer%>
+    <br>
+  </p>
+    
+
+
+    <form action="qBlog/<%= info._id%>?_method=PUT" method="POST">
+        <input type="text" placeholder="answer" name="answer">
+        <input type="submit" id="answer" class="btn btn-danger inline" value="answer">
+    </form>
+    <hr>
+
+
+    <%})%>
+
+</div>
+
+
+<%include partials/footer.ejs%>
